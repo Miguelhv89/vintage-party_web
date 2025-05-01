@@ -1,0 +1,31 @@
+.galeria-section {
+    background-color: #e6f0fa;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.gallery-card img {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividad */
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+}

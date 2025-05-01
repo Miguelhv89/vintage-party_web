@@ -1,0 +1,79 @@
+<footer class="footer py-4 text-center">
+    <!-- Título -->
+    <h3 class="row footer-title mb-4 text-center py-3"><strong>¡Celebra cada momento!</strong></h3>
+
+    <!-- Decoración de luces -->
+    <div class="lights-decoration mb-5"></div>
+
+    <!-- Contenido del footer -->
+    <div class="container">
+        <div class="row">
+            <!-- Columna 1: Logo y enlaces -->
+            <div class="col-md-3 text-md-start text-center mb-4 mb-md-0">
+                <img src="images/logo-v.jpeg" alt="Vintage Party Logo" class="footer-logo mb-3">
+                <ul class="list-unstyled">
+                    <li><a href="/#quienes-somos" class="footer-link">Quienes Somos</a></li>
+                    <li><a href="/#galeria" class="footer-link">Galeria</a></li>
+                    <li><a href="/#contacto" class="footer-link">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 2: Categorías -->
+            <div class="col-md-3 text-md-start text-center mb-4 mb-md-0">
+                <h5 class="footer-subtitle">Ver todas las categorias</h5>
+                <div class="row categories-container">
+                    <div class="col-6" *ngFor="let category of categories">
+                        <ul class="list-unstyled">
+                            <a href="#" class="waves-effect" (click)="selectCategory(category); $event.preventDefault()"
+                                class="category-link">
+                                {{ category.name }}
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna 3: Contactos -->
+            <div class="col-md-3 text-md-start text-center mb-4 mb-md-0">
+                <h5 class="footer-subtitle">Contactos</h5>
+                <ul class="list-unstyled mb-4">
+                    <li>
+                        <i class="bi bi-telephone me-2"></i>
+                        <a href="tel:+551159761533" class="footer-link">(11)5976-1533</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-whatsapp me-2"></i>
+                        <a href="https://wa.me/5511954515822?text=hola" target="_blank" class="footer-link">Vendas 1 -
+                            (11)95451-5822</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-whatsapp me-2"></i>
+                        <a href="https://wa.me/551195860035" target="_blank" class="footer-link">Vendas 2 -
+                            (11)9586-0035</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-whatsapp me-2"></i>
+                        <a href="https://wa.me/551195860107" target="_blank" class="footer-link">Vendas 3 -
+                            (11)9586-0107</a>
+                    </li>
+                </ul>
+                <h5 class="footer-subtitle mt-4">Horário de atendimento:</h5>
+                <p>De segunda-feira a sexta-feira, 09h às 18h;<br>Sábado, 09h às 14h</p>
+                <p>Rua Scipião, 333,<br>Vila Romana, São Paulo/SP<br>CEP 05047-060</p>
+            </div>
+
+            <!-- Columna 4: Instagram -->
+            <div class="col-md-3 text-md-start text-center">
+                <a href="https://instagram.com/voilalocadora" target="_blank" class="footer-link mt-3 d-block">
+                    <i class="bi bi-instagram me-2"></i>Vintage Party
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright mt-5 py-3">
+        <p>Copyright © - Designed by JSM</p>
+        <p>{{fecha}}</p>
+    </div>
+</footer>
