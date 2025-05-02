@@ -4,9 +4,7 @@
 
 .carousel-inner {
     aspect-ratio: 16 / 9;
-    /* Proporción estándar para imágenes de banner */
     max-height: 500px;
-    /* Altura máxima para evitar que el carrusel sea demasiado grande */
     overflow: hidden;
 }
 
@@ -14,19 +12,19 @@
     width: 100%;
     height: 500px;
     object-fit: cover;
-    /* Cubre el área sin distorsión */
     object-position: center;
-    /* Centra la imagen */
 }
 
 .whatsapp-btn {
-    bottom: 20px;
-    right: 20px;
+    width: 55px;
+    padding: 8px 0;
+    bottom: 30px;
+    right: 40px;
     background-color: #25d366;
-    color: #fff;
-    padding: 15px;
+    color: #fff;    
+    text-align: center;
     border-radius: 50%;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 

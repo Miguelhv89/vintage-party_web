@@ -1,17 +1,17 @@
 .galeria-section {
-    background-color: #e6f0fa;
+    background-color: #fff;
 }
 
 .section-title {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: #333;
+    color: #fff;
 }
 
 .section-subtitle {
     font-size: 1.1rem;
-    color: #fff;
+    color: var(--bg-primary);
 }
 
 .gallery-card img {
