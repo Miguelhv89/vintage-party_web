@@ -20,7 +20,7 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Build
-      run: npm run build
+      run: npm run build -- --base-href=/vintage-party_web/
 
     - name: Deploy
       if: success()
