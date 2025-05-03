@@ -17,10 +17,9 @@
     background-size: contain;
     width: 100%;
     padding-top: 0px;
-    padding-bottom: 35px;
+    padding-bottom: 80px;
     text-align: center;
     display: flow-root;
-    height: 80px;
 }
 
 .footer-logo {
@@ -91,5 +90,9 @@ a {
 
     .copyright p {
         font-size: 0.8rem;
+    }
+
+    .lights-decoration {
+        padding-bottom: 40px;
     }
 }
