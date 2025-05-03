@@ -17,6 +17,15 @@ span{
     width: 80%;    
 }
 
+a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
 /* Adjust font size for smaller screens */
 @media (max-width: 767px) {
     span {
