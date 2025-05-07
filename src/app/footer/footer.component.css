@@ -12,7 +12,7 @@
 }
 
 .lights-decoration {
-    background-image: url('images/lights-decoration.png');
+    background-image: url('/images/lights-decoration.png');
     background-repeat: repeat-x;
     background-size: contain;
     width: 100%;
