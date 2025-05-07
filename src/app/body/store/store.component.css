@@ -1,3 +1,7 @@
+.container-store{
+  width: 80%;
+}
+
 .category-sidebar {
   background-color: var(--bg-primary);
   color: #fff;
@@ -87,6 +91,18 @@ h2 {
 
 /* Responsividad */
 @media (max-width: 767px) {
+  app-search {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+  }
+  .separate{
+    padding-top: 75px;
+  }
+  .container-store{
+    width: 100%;  
+  }
+
   .category-sidebar {
     margin-bottom: 1.5rem;
     border-radius: 8px;

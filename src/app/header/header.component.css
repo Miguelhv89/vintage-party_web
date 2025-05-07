@@ -25,6 +25,7 @@
     right: 0;
     z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
     max-width: 100% !important; /* Ancho completo en móvil */
+    background-color: #fff;
   }
 
   .navbar-brand .logo {

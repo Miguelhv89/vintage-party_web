@@ -1,7 +1,8 @@
 <!-- Barra de búsqueda -->
 <app-search></app-search>
+<div class="separate"></div>
 <app-sitemap [selectedCategory]="selectedCategory"></app-sitemap>
-<div class="row mt-3 mx-auto" style="max-width: 80%;">
+<div class="row mt-3 mx-auto container-store">
   <!-- Sidebar (Categorías) -->
   <div class="col-md-2">
     <div class="category-sidebar p-3 rounded">
@@ -19,7 +20,7 @@
   <div class="col-md-10">
     <h3>{{ selectedCategory }}</h3>
     <div class="row">
-      <div class="col-6 col-md-4 col-lg-3 mb-4" *ngFor="let product of products">
+      <div class="col-12 col-md-4 col-lg-3 mb-4" *ngFor="let product of products">
         <div class="card h-100">
           <img [src]="product.image" class="card-img-top" [alt]="product.name">
           <div class="card-body text-center">

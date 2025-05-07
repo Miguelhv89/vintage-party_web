@@ -12,8 +12,9 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeComponent {
   carouselImages: string[] = [
-    'images/b1.jpg',
-    'images/b2.png',
-    'images/b3.png'
+    'images/banner_1.jpeg',
+    'images/banner_3.jpeg',
+    'images/banner_4.jpeg',
+    'images/banner_5.jpeg'
   ];
 }

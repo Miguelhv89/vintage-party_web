@@ -4,21 +4,13 @@
 <section class="galeria-section py-5">
     <div class="container text-center">
         <p class="section-subtitle mb-5">La decoración perfecta para momentos inolvidables.</p>
-        <div class="row">
-            <!-- Placeholder para imágenes de la galería -->
-            <div class="col-md-4 mb-4">
+        <div class="row g-4">
+            <div class="col-12 col-md-4" *ngFor="let item of galleryItems">
                 <div class="gallery-card">
-                    <img src="images/ga-1.jpg" alt="Galeria 1" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="gallery-card">
-                    <img src="images/ga-2.jpg" alt="Galeria 2" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="gallery-card">
-                    <img src="images/ga-3.jpg" alt="Galeria 3" class="img-fluid">
+                    <img [src]="item.image" [alt]="item.title" class="card-img">
+                    <div class="card-overlay">
+                        <h4 class="card-title">{{ item.title }}</h4>
+                    </div>
                 </div>
             </div>
         </div>
