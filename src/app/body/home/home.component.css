@@ -88,8 +88,11 @@
 /* Responsividad */
 @media (max-width: 767px) {
     .carousel-inner {
-        aspect-ratio: 4 / 3;
-        max-height: 100px;
+        aspect-ratio: 4 / 3;        
+        max-height: 200px;
+    }
+    .banner-image {     
+        height: 200px;        
     }
 
     .whatsapp-btn {
