@@ -28,6 +28,12 @@ jobs:
         find: "/images/lights-decoration.png"
         replace: "images/lights-decoration.png"
         include: "dist/vintage-party_web/browser/main-*.js"
+    - name: Replace Images Path
+      uses: jacobtomlinson/gha-find-replace@v2
+      with:
+        find: "/categoria/"
+        replace: "/vintage-party_web/categoria/"
+        include: "dist/vintage-party_web/browser/main-*.js"
         
     - name: Deploy
       if: success()

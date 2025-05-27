@@ -36,8 +36,10 @@ export class StoreComponent {
         }
       );
 
-      this.getProductsByCategory(intId);      
+      this.getProductsByCategory(intId);
+      window.scrollTo(0, 0);     
     });
+
   }
 
   getProductsByCategory(categoryId: number): void {
