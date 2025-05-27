@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Category, CategoryService } from '../category.service';
 import { Router } from '@angular/router';
+import { CategoryService, Category, CategorySummary } from '../services/serviceCategory';
 
 @Component({
   selector: 'app-footer',
@@ -14,10 +14,14 @@ export class FooterComponent {
   categories: Category[] = [];
 
   constructor(private categoryService: CategoryService, private router: Router) {
-    this.categories = this.categoryService.getCategories();
+    this.categoryService.getFirstLevelCategoriesOrChildren().subscribe(
+      (categories: CategorySummary) => {
+        this.categories = categories.categories;
+      }
+    );
   }
 
-  selectCategory(category: Category): void {    
+  selectCategory(category: Category): void {
     this.router.navigate(['/store', category.id]);
   }
 }
