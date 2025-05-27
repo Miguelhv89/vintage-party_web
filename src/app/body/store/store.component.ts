@@ -55,4 +55,28 @@ export class StoreComponent {
     this.selectedCategory = category.name;
     this.getProductsByCategory(category.id);
   }
+
+  
+  selectedProductIndex: number = 0;
+  showModal: boolean = false;
+  openModal(index: number): void {
+    this.selectedProductIndex = index;
+    this.showModal = true;
+  }
+
+  closeModal(): void {
+    this.showModal = false;
+  }
+
+  prevImage(): void {
+    if (this.selectedProductIndex > 0) {
+      this.selectedProductIndex--;
+    }
+  }
+
+  nextImage(): void {
+    if (this.selectedProductIndex < this.products.length - 1) {
+      this.selectedProductIndex++;
+    }
+  }
 }
